@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 自定义样式补充 */
+body {
+  min-height: 100vh;
+}
