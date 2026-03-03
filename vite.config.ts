@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/FotileRangehoodGuide/',  // ⚠️ 改为你的仓库名，前后都要有斜杠
+  base: '/FotileRanghoodGuide/',  // ⚠️ 改为你的仓库名，前后都要有斜杠
   server: {
     port: 5000,
     host: '0.0.0.0',
