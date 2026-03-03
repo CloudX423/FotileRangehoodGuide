@@ -37,7 +37,7 @@
         border-bottom: 2px solid rgba(102, 126, 234, 0.2);
       }
     </style>
-  `}function f(){const e=typeof import.meta<"u"&&"/"||"";return e==="/"?"":e}function b(e,o){const r=e.media.length>1,s=f(),t=["四面八方不跑烟。","最好的面膜，是方太油烟机。","炒菜有方太，除油烟更要有方太。","懂烟机，更懂呼吸。","别让油烟伤了家人的肺。","强力吸，更安静。","别让你的梦想，被油烟熏黑。"];return`
+  `}function f(){const e=typeof import.meta<"u"&&"/FotileRangehoodGuide/"||"";return e==="/"?"":e}function b(e,o){const r=e.media.length>1,s=f(),t=["四面八方不跑烟。","最好的面膜，是方太油烟机。","炒菜有方太，除油烟更要有方太。","懂烟机，更懂呼吸。","别让油烟伤了家人的肺。","强力吸，更安静。","别让你的梦想，被油烟熏黑。"];return`
     <div class="product-card fade-in">
       <!-- 店铺公告文本框（右上角） -->
       <div class="shop-notice-box">
