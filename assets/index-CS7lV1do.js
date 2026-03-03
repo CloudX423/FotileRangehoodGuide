@@ -1,4 +1,4 @@
-(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))s(n);new MutationObserver(n=>{for(const o of n)if(o.type==="childList")for(const i of o.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&s(i)}).observe(document,{childList:!0,subtree:!0});function r(n){const o={};return n.integrity&&(o.integrity=n.integrity),n.referrerPolicy&&(o.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?o.credentials="include":n.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function s(n){if(n.ep)return;n.ep=!0;const o=r(n);fetch(n.href,o)}})();const p={Q1:{id:"Q1",text:"您家厨房的安装环境如何？",answers:[{id:"A1",text:"不装橱柜，挂墙上(外挂式)",type:"next_question",nextQuestionId:"Q2"},{id:"A2",text:"要做橱柜，能看到烟机的操作面板",type:"next_question",nextQuestionId:"Q3"},{id:"A3",text:"藏橱柜里，不用就看不到",type:"show_product",product:{name:"EMG9069G",description:"全隐藏式油烟机",media:[{type:"image",url:"/油烟机9069G.jpg"},{type:"image",url:"/9069g-1.jpg"},{type:"image",url:"/9069g-2.jpg"},{type:"image",url:"/9069g-3.jpg"},{type:"image",url:"/9069g-4.jpg"},{type:"image",url:"/9069g-5.jpg"},{type:"image",url:"/9069g-6.jpg"},{type:"video",url:"/9069g-demo.mp4"}],posterImages:["/海报图1.jpg"],shoppingUrl:"https://qkitchen.co.nz/product/694480f9a489d31a6db348f1/"}},{id:"A4",text:"仅60cm宽的，外挂入柜都看这条",type:"show_product",product:{name:"EMG60系列",description:"60cm超窄机身，小空间首选",media:[{type:"image",url:"/6018.jpg"},{type:"image",url:"/6018W.jpg"},{type:"image",url:"/6020Y.jpg"}],posterImages:["/海报图1.jpg"],shoppingUrl:"https://search.jd.com/Search?keyword=方太6018油烟机"}}]},Q2:{id:"Q2",text:"您对油烟机的期待？",answers:[{id:"A5",text:"经常爆炒，油烟多，要排烟猛还不吵",type:"show_product",product:{name:"9050系列",description:"大吸力，适合爆炒，静音设计",media:[{type:"image",url:"/油烟机9050.jpg"},{type:"image",url:"/油烟机9050Y.jpg"},{type:"image",url:"/9050_4.jpg"},{type:"image",url:"/9050Y_2.jpg"}],posterImages:["/海报图1.jpg"],shoppingUrl:"https://search.jd.com/Search?keyword=方太9050油烟机"}},{id:"A6",text:"做饭不碰头 + 离油烟更近，适合开放式厨房",type:"show_product",product:{name:"侧吸式",description:"吸烟距离近，开放式厨房理想选择",media:[{type:"image",url:"/油烟机9009X.jpg"},{type:"image",url:"/油烟机9039.jpg"}],posterImages:["/海报图1.jpg"],shoppingUrl:"https://search.jd.com/Search?keyword=方太侧吸油烟机"}},{id:"A7",text:"极简主义设计, 简约实用",type:"next_question",nextQuestionId:"Q3"}]},Q3:{id:"Q3",text:"除了极简，还想要？",answers:[{id:"A8",text:"美观静音，排烟效果强，功能全",type:"show_product",product:{name:"EMG9060",description:"全功能油烟机，静音高效",media:[{type:"image",url:"/油烟机9060.jpg"},{type:"image",url:"/9060_1.jpg"},{type:"image",url:"/9060_4.jpg"}],posterImages:["/海报图1.jpg"],shoppingUrl:"https://search.jd.com/Search?keyword=方太9060油烟机"}},{id:"A9",text:"吸力足，追求性价比",type:"show_product",product:{name:"EMG9063G / EMG9008",description:"高性价比，吸力强劲",media:[{type:"image",url:"/油烟机9063G.jpg"},{type:"image",url:"/油烟机9008.jpg"}],posterImages:["/海报图1.jpg"],shoppingUrl:"https://search.jd.com/Search?keyword=方太9063G油烟机"}},{id:"A10",text:"满足基本需求，稳定耐用",type:"show_product",product:{name:"EMS9028S",description:"基础款，稳定可靠",media:[{type:"image",url:"/油烟机9028S.jpg"}],posterImages:["/海报图1.jpg"],shoppingUrl:"https://search.jd.com/Search?keyword=方太9028S油烟机"}}]}},u="Q1";function m(e,t){const r=e.answers.map(s=>`
+(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))s(t);new MutationObserver(t=>{for(const n of t)if(n.type==="childList")for(const i of n.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&s(i)}).observe(document,{childList:!0,subtree:!0});function r(t){const n={};return t.integrity&&(n.integrity=t.integrity),t.referrerPolicy&&(n.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?n.credentials="include":t.crossOrigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function s(t){if(t.ep)return;t.ep=!0;const n=r(t);fetch(t.href,n)}})();const u={Q1:{id:"Q1",text:"您家厨房的安装环境如何？",answers:[{id:"A1",text:"不装橱柜，挂墙上(外挂式)",type:"next_question",nextQuestionId:"Q2"},{id:"A2",text:"要做橱柜，能看到烟机的操作面板",type:"next_question",nextQuestionId:"Q3"},{id:"A3",text:"藏橱柜里，不用就看不到",type:"show_product",product:{name:"EMG9069G",description:"全隐藏式油烟机",media:[{type:"image",url:"/油烟机9069G.jpg"},{type:"image",url:"/9069g-1.jpg"},{type:"image",url:"/9069g-2.jpg"},{type:"image",url:"/9069g-3.jpg"},{type:"image",url:"/9069g-4.jpg"},{type:"image",url:"/9069g-5.jpg"},{type:"image",url:"/9069g-6.jpg"},{type:"video",url:"/9069g-demo.mp4"}],posterImages:["/海报图1.jpg"],shoppingUrl:"https://qkitchen.co.nz/product/694480f9a489d31a6db348f1/"}},{id:"A4",text:"仅60cm宽的，外挂入柜都看这条",type:"show_product",product:{name:"EMG60系列",description:"60cm超窄机身，小空间首选",media:[{type:"image",url:"/6018.jpg"},{type:"image",url:"/6018W.jpg"},{type:"image",url:"/6020Y.jpg"}],posterImages:["/海报图1.jpg"],shoppingUrl:"https://search.jd.com/Search?keyword=方太6018油烟机"}}]},Q2:{id:"Q2",text:"您对油烟机的期待？",answers:[{id:"A5",text:"经常爆炒，油烟多，要排烟猛还不吵",type:"show_product",product:{name:"9050系列",description:"大吸力，适合爆炒，静音设计",media:[{type:"image",url:"/油烟机9050.jpg"},{type:"image",url:"/油烟机9050Y.jpg"},{type:"image",url:"/9050_4.jpg"},{type:"image",url:"/9050Y_2.jpg"}],posterImages:["/海报图1.jpg"],shoppingUrl:"https://search.jd.com/Search?keyword=方太9050油烟机"}},{id:"A6",text:"做饭不碰头 + 离油烟更近，适合开放式厨房",type:"show_product",product:{name:"侧吸式",description:"吸烟距离近，开放式厨房理想选择",media:[{type:"image",url:"/油烟机9009X.jpg"},{type:"image",url:"/油烟机9039.jpg"}],posterImages:["/海报图1.jpg"],shoppingUrl:"https://search.jd.com/Search?keyword=方太侧吸油烟机"}},{id:"A7",text:"极简主义设计, 简约实用",type:"next_question",nextQuestionId:"Q3"}]},Q3:{id:"Q3",text:"除了极简，还想要？",answers:[{id:"A8",text:"美观静音，排烟效果强，功能全",type:"show_product",product:{name:"EMG9060",description:"全功能油烟机，静音高效",media:[{type:"image",url:"/油烟机9060.jpg"},{type:"image",url:"/9060_1.jpg"},{type:"image",url:"/9060_4.jpg"}],posterImages:["/海报图1.jpg"],shoppingUrl:"https://search.jd.com/Search?keyword=方太9060油烟机"}},{id:"A9",text:"吸力足，追求性价比",type:"show_product",product:{name:"EMG9063G / EMG9008",description:"高性价比，吸力强劲",media:[{type:"image",url:"/油烟机9063G.jpg"},{type:"image",url:"/油烟机9008.jpg"}],posterImages:["/海报图1.jpg"],shoppingUrl:"https://search.jd.com/Search?keyword=方太9063G油烟机"}},{id:"A10",text:"满足基本需求，稳定耐用",type:"show_product",product:{name:"EMS9028S",description:"基础款，稳定可靠",media:[{type:"image",url:"/油烟机9028S.jpg"}],posterImages:["/海报图1.jpg"],shoppingUrl:"https://search.jd.com/Search?keyword=方太9028S油烟机"}}]}},g="Q1";function x(e,o){const r=e.answers.map(s=>`
       <button 
         class="answer-button w-full p-4 text-left bg-white/90 backdrop-blur-sm rounded-xl border-2 border-transparent hover:border-blue-500 hover:shadow-lg transition-all duration-300"
         data-answer-id="${s.id}"
@@ -37,14 +37,14 @@
         border-bottom: 2px solid rgba(102, 126, 234, 0.2);
       }
     </style>
-  `}function x(e,t){const r=e.media.length>1,s=["四面八方不跑烟。","最好的面膜，是方太油烟机。","炒菜有方太，除油烟更要有方太。","懂烟机，更懂呼吸。","别让油烟伤了家人的肺。","强力吸，更安静。","别让你的梦想，被油烟熏黑。"];return`
+  `}function f(){const e=typeof import.meta<"u"&&"/"||"";return e==="/"?"":e}function b(e,o){const r=e.media.length>1,s=f(),t=["四面八方不跑烟。","最好的面膜，是方太油烟机。","炒菜有方太，除油烟更要有方太。","懂烟机，更懂呼吸。","别让油烟伤了家人的肺。","强力吸，更安静。","别让你的梦想，被油烟熏黑。"];return`
     <div class="product-card fade-in">
       <!-- 店铺公告文本框（右上角） -->
       <div class="shop-notice-box">
         <div class="notice-content">
           <div class="notice-title"></div>
           <div class="notice-text">
-            ${s[Math.floor(Math.random()*s.length)]}
+            ${t[Math.floor(Math.random()*t.length)]}
           </div>
           
           <div class="notice-text">
@@ -64,18 +64,18 @@
       <!-- 媒体轮播区域（弹性伸缩，占据剩余空间） -->
       <div class="carousel-container" data-current-index="0" data-has-multiple="${r}">
         <div class="carousel-track">
-          ${e.media.map((o,i)=>o.type==="image"?`
-                <div class="carousel-slide" data-index="${i}">
+          ${e.media.map((i,a)=>i.type==="image"?`
+                <div class="carousel-slide" data-index="${a}">
                   <img 
-                    src="${o.url}" 
-                    alt="${e.name} - 图片${i+1}"
-                    onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\\'placeholder\\'><svg class=\\'w-16 h-16\\' fill=\\'none\\' stroke=\\'currentColor\\' viewBox=\\'0 0 24 24\\'><path stroke-linecap=\\'round\\' stroke-linejoin=\\'round\\' stroke-width=\\'2\\' d=\\'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z\\'></path></svg><p>${o.url}</p></div>'"
+                    src="${s}${i.url}"
+                    alt="${e.name} - 图片${a+1}"
+                    onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\\'placeholder\\'><svg class=\\'w-16 h-16\\' fill=\\'none\\' stroke=\\'currentColor\\' viewBox=\\'0 0 24 24\\'><path stroke-linecap=\\'round\\' stroke-linejoin=\\'round\\' stroke-width=\\'2\\' d=\\'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z\\'></path></svg><p>${i.url}</p></div>'"
                   />
                 </div>
-              `:o.type==="video"?`
-                <div class="carousel-slide video-slide" data-index="${i}">
+              `:i.type==="video"?`
+                <div class="carousel-slide video-slide" data-index="${a}">
                   <video 
-                    src="${o.url}" 
+                    src="${s}${i.url}"
                     controls 
                     playsinline
                     preload="metadata"
@@ -101,8 +101,8 @@
         <!-- 指示器点（仅多媒体显示） -->
         ${r?`
           <div class="carousel-dots">
-            ${e.media.map((o,i)=>`
-              <button class="carousel-dot ${i===0?"active":""}" data-index="${i}"></button>
+            ${e.media.map((i,a)=>`
+              <button class="carousel-dot ${a===0?"active":""}" data-index="${a}"></button>
             `).join("")}
           </div>
         `:""}
@@ -140,11 +140,11 @@
           <!-- 海报轮播区域 -->
           <div class="poster-carousel" data-current-index="0" data-has-multiple="${e.posterImages&&e.posterImages.length>1}">
             <div class="poster-carousel-track">
-              ${e.posterImages&&e.posterImages.length>0?e.posterImages.map((o,i)=>`
-                <div class="poster-carousel-slide" data-index="${i}">
+              ${e.posterImages&&e.posterImages.length>0?e.posterImages.map((i,a)=>`
+                <div class="poster-carousel-slide" data-index="${a}">
                   <img
-                    src="${o}"
-                    alt="海报${i+1}"
+                    src="${s}${i}"
+                    alt="海报${a+1}"
                     class="poster-image"
                     onerror="this.style.display='none';"
                   />
@@ -167,8 +167,8 @@
             <!-- 指示器点（仅多张海报显示） -->
             ${e.posterImages&&e.posterImages.length>1?`
               <div class="poster-carousel-dots">
-                ${e.posterImages.map((o,i)=>`
-                  <button class="poster-carousel-dot ${i===0?"active":""}" data-index="${i}" onclick="window.dispatchEvent(new CustomEvent('poster-go-to', {detail: ${i}}))"></button>
+                ${e.posterImages.map((i,a)=>`
+                  <button class="poster-carousel-dot ${a===0?"active":""}" data-index="${a}" onclick="window.dispatchEvent(new CustomEvent('poster-go-to', {detail: ${a}}))"></button>
                 `).join("")}
               </div>
             `:""}
@@ -610,7 +610,7 @@
         cursor: default;
       }
     </style>
-  `}const a={currentQuestionId:u,currentProduct:null,history:[]};function f(){const e=document.getElementById("app");if(!e){console.error("App element not found");return}w(),l(),e.addEventListener("click",y),b()}function b(){let e=0,t=0;const r=50;document.addEventListener("touchstart",n=>{e=n.touches[0].clientX},{passive:!0}),document.addEventListener("touchend",n=>{t=n.changedTouches[0].clientX,s()},{passive:!0});function s(){const n=document.querySelector(".carousel-container");if(!n||n.getAttribute("data-has-multiple")!=="true")return;const o=e-t;o>r?h():o<-r&&g()}}function w(){const e=document.createElement("style");e.textContent=`
+  `}const l={currentQuestionId:g,currentProduct:null,history:[]};function w(){const e=document.getElementById("app");if(!e){console.error("App element not found");return}y(),d(),e.addEventListener("click",j),v()}function v(){let e=0,o=0;const r=50;document.addEventListener("touchstart",t=>{e=t.touches[0].clientX},{passive:!0}),document.addEventListener("touchend",t=>{o=t.changedTouches[0].clientX,s()},{passive:!0});function s(){const t=document.querySelector(".carousel-container");if(!t||t.getAttribute("data-has-multiple")!=="true")return;const n=e-o;n>r?m():n<-r&&h()}}function y(){const e=document.createElement("style");e.textContent=`
     * {
       margin: 0;
       padding: 0;
@@ -677,8 +677,8 @@
     .fade-in {
       animation: fadeIn 0.4s ease-out;
     }
-  `,document.head.appendChild(e)}function l(){const e=document.getElementById("app");if(!e)return;let t="";if(a.currentProduct)t=x(a.currentProduct),e.classList.add("showing-product");else if(a.currentQuestionId){const r=p[a.currentQuestionId];r&&(t=m(r)),e.classList.remove("showing-product")}e.innerHTML=`
+  `,document.head.appendChild(e)}function d(){const e=document.getElementById("app");if(!e)return;let o="";if(l.currentProduct)o=b(l.currentProduct),e.classList.add("showing-product");else if(l.currentQuestionId){const r=u[l.currentQuestionId];r&&(o=x(r)),e.classList.remove("showing-product")}e.innerHTML=`
     <div class="container">
-      ${t}
+      ${o}
     </div>
-  `}function v(e){const t=p[a.currentQuestionId];if(!t)return;const r=t.answers.find(s=>s.id===e);r&&(r.type==="next_question"&&r.nextQuestionId?(a.history.push(a.currentQuestionId),a.currentQuestionId=r.nextQuestionId,l()):r.type==="show_product"&&r.product&&(a.currentProduct=r.product,a.currentQuestionId=null,l()))}function y(e){const t=e.target,r=t.closest(".answer-button");if(r){const o=r.getAttribute("data-answer-id");o&&v(o);return}if(t.closest(".restart-button")){I();return}const n=t.closest(".carousel-dot");if(n){const o=parseInt(n.getAttribute("data-index")||"0");d(o);return}}function d(e){const t=document.querySelector(".carousel-track"),r=document.querySelector(".carousel-container");if(!t||!r)return;const s=document.querySelectorAll(".carousel-slide").length;parseInt(r.getAttribute("data-current-index")||"0"),e<0?e=s-1:e>=s&&(e=0),document.querySelectorAll("video").forEach(n=>n.pause()),t.style.transform=`translateX(-${e*100}%)`,r.setAttribute("data-current-index",e.toString()),document.querySelectorAll(".carousel-dot").forEach((n,o)=>{n.classList.toggle("active",o===e)})}function g(){const e=document.querySelector(".carousel-container"),t=parseInt(e?.getAttribute("data-current-index")||"0");d(t-1)}function h(){const e=document.querySelector(".carousel-container"),t=parseInt(e?.getAttribute("data-current-index")||"0");d(t+1)}window.addEventListener("carousel-prev",()=>{g()});window.addEventListener("carousel-next",()=>{h()});window.addEventListener("show-poster",()=>{const e=document.getElementById("poster-modal");e&&(e.style.display="block",document.body.style.overflow="hidden")});function c(e){const t=document.querySelector(".poster-carousel-track"),r=document.querySelector(".poster-carousel");if(!t||!r)return;const s=document.querySelectorAll(".poster-carousel-slide").length;parseInt(r.getAttribute("data-current-index")||"0"),e<0?e=s-1:e>=s&&(e=0),t.style.transform=`translateX(-${e*100}%)`,r.setAttribute("data-current-index",e.toString()),document.querySelectorAll(".poster-carousel-dot").forEach((n,o)=>{n.classList.toggle("active",o===e)})}function k(){const e=document.querySelector(".poster-carousel"),t=parseInt(e?.getAttribute("data-current-index")||"0");c(t-1)}function j(){const e=document.querySelector(".poster-carousel"),t=parseInt(e?.getAttribute("data-current-index")||"0");c(t+1)}window.addEventListener("poster-prev",()=>{k()});window.addEventListener("poster-next",()=>{j()});window.addEventListener("poster-go-to",e=>{e.detail!==void 0&&c(e.detail)});function I(){a.currentQuestionId=u,a.currentProduct=null,a.history=[],l()}f();
+  `}function k(e){const o=u[l.currentQuestionId];if(!o)return;const r=o.answers.find(s=>s.id===e);r&&(r.type==="next_question"&&r.nextQuestionId?(l.history.push(l.currentQuestionId),l.currentQuestionId=r.nextQuestionId,d()):r.type==="show_product"&&r.product&&(l.currentProduct=r.product,l.currentQuestionId=null,d()))}function j(e){const o=e.target,r=o.closest(".answer-button");if(r){const n=r.getAttribute("data-answer-id");n&&k(n);return}if(o.closest(".restart-button")){$();return}const t=o.closest(".carousel-dot");if(t){const n=parseInt(t.getAttribute("data-index")||"0");c(n);return}}function c(e){const o=document.querySelector(".carousel-track"),r=document.querySelector(".carousel-container");if(!o||!r)return;const s=document.querySelectorAll(".carousel-slide").length;parseInt(r.getAttribute("data-current-index")||"0"),e<0?e=s-1:e>=s&&(e=0),document.querySelectorAll("video").forEach(t=>t.pause()),o.style.transform=`translateX(-${e*100}%)`,r.setAttribute("data-current-index",e.toString()),document.querySelectorAll(".carousel-dot").forEach((t,n)=>{t.classList.toggle("active",n===e)})}function h(){const e=document.querySelector(".carousel-container"),o=parseInt(e?.getAttribute("data-current-index")||"0");c(o-1)}function m(){const e=document.querySelector(".carousel-container"),o=parseInt(e?.getAttribute("data-current-index")||"0");c(o+1)}window.addEventListener("carousel-prev",()=>{h()});window.addEventListener("carousel-next",()=>{m()});window.addEventListener("show-poster",()=>{const e=document.getElementById("poster-modal");e&&(e.style.display="block",document.body.style.overflow="hidden")});function p(e){const o=document.querySelector(".poster-carousel-track"),r=document.querySelector(".poster-carousel");if(!o||!r)return;const s=document.querySelectorAll(".poster-carousel-slide").length;parseInt(r.getAttribute("data-current-index")||"0"),e<0?e=s-1:e>=s&&(e=0),o.style.transform=`translateX(-${e*100}%)`,r.setAttribute("data-current-index",e.toString()),document.querySelectorAll(".poster-carousel-dot").forEach((t,n)=>{t.classList.toggle("active",n===e)})}function I(){const e=document.querySelector(".poster-carousel"),o=parseInt(e?.getAttribute("data-current-index")||"0");p(o-1)}function S(){const e=document.querySelector(".poster-carousel"),o=parseInt(e?.getAttribute("data-current-index")||"0");p(o+1)}window.addEventListener("poster-prev",()=>{I()});window.addEventListener("poster-next",()=>{S()});window.addEventListener("poster-go-to",e=>{e.detail!==void 0&&p(e.detail)});function $(){l.currentQuestionId=g,l.currentProduct=null,l.history=[],d()}w();
