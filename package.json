@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "Vanilla TypeScript application with Vite (HTML + CSS + TS)",
   "scripts": {
-    "build": "vite build",
-    "dev": "vite",
+    "build": "bash ./scripts/build.sh",
+    "dev": "bash ./scripts/dev.sh",
     "preinstall": "npx only-allow pnpm",
     "lint": "eslint",
-    "start": "vite preview",
+    "start": "bash ./scripts/start.sh",
     "ts-check": "tsc -p tsconfig.json",
-    "deploy": "vite build && gh-pages -d dist"
+    "deploy": "pnpm run build && gh-pages -d dist"
   },
   "dependencies": {
     "@supabase/supabase-js": "2.95.3",
