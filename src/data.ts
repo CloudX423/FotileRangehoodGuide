@@ -23,9 +23,10 @@ export const questionData: Record<string, Question> = {
         text: '藏橱柜里，不用就看不到',
         type: 'show_product',
         product: {
-          name: '9069G',
+          name: 'EMG9069G',
           description: '全隐藏式油烟机',
           media: [
+            { type: 'image', url: '/油烟机9069G.jpg' },
             { type: 'image', url: '/9069g-1.jpg' },
             { type: 'image', url: '/9069g-2.jpg' },
             { type: 'image', url: '/9069g-3.jpg' },
@@ -33,7 +34,9 @@ export const questionData: Record<string, Question> = {
             { type: 'image', url: '/9069g-5.jpg' },
             { type: 'image', url: '/9069g-6.jpg' },
             { type: 'video', url: '/9069g-demo.mp4' }
-          ]
+          ],
+          posterImages: ['/海报图1.jpg'],
+          shoppingUrl: 'https://qkitchen.co.nz/product/694480f9a489d31a6db348f1/'
         }
       },
       {
@@ -41,9 +44,15 @@ export const questionData: Record<string, Question> = {
         text: '仅60cm宽的，外挂入柜都看这条',
         type: 'show_product',
         product: {
-          name: '6018 & 6018W & 6020Y',
+          name: 'EMG60系列',
           description: '60cm超窄机身，小空间首选',
-          media: [{ type: 'image', url: '6018系列产品图' }]
+          media: [
+            { type: 'image', url: '/6018.jpg' },
+            { type: 'image', url: '/6018W.jpg' },
+            { type: 'image', url: '/6020Y.jpg' }
+          ],
+          posterImages: ['/海报图1.jpg'],
+          shoppingUrl: 'https://search.jd.com/Search?keyword=方太6018油烟机'
         }
       }
     ]
@@ -58,18 +67,30 @@ export const questionData: Record<string, Question> = {
         type: 'show_product',
         product: {
           name: '9050系列',
-          description: '大吸力油烟机，适合爆炒，静音设计',
-          media: [{ type: 'image', url: '9050系列产品图' }]
+          description: '大吸力，适合爆炒，静音设计',
+          media: [
+            { type: 'image', url: '/油烟机9050.jpg' },
+            { type: 'image', url: '/油烟机9050Y.jpg' },
+            { type: 'image', url: '/9050_4.jpg' },
+            { type: 'image', url: '/9050Y_2.jpg' }
+          ],
+          posterImages: ['/海报图1.jpg'],
+          shoppingUrl: 'https://search.jd.com/Search?keyword=方太9050油烟机'
         }
       },
       {
         id: 'A6',
-        text: '做饭不碰头 + 吸得近，吸力足，适合开放式厨房',
+        text: '做饭不碰头 + 离油烟更近，适合开放式厨房',
         type: 'show_product',
         product: {
-          name: '侧吸/半侧吸',
-          description: '侧吸式设计，吸烟距离近，开放式厨房理想选择',
-          media: [{ type: 'image', url: '侧吸产品图' }]
+          name: '侧吸式',
+          description: '吸烟距离近，开放式厨房理想选择',
+          media: [
+            { type: 'image', url: '/油烟机9009X.jpg' },
+            { type: 'image', url: '/油烟机9039.jpg' }
+          ],
+          posterImages: ['/海报图1.jpg'],
+          shoppingUrl: 'https://search.jd.com/Search?keyword=方太侧吸油烟机'
         }
       },
       {
@@ -89,9 +110,15 @@ export const questionData: Record<string, Question> = {
         text: '美观静音，排烟效果强，功能全',
         type: 'show_product',
         product: {
-          name: '9060',
-          description: '全功能油烟机，静音高效，设计简约',
-          media: [{ type: 'image', url: '9060产品图' }]
+          name: 'EMG9060',
+          description: '全功能油烟机，静音高效',
+          media: [
+            { type: 'image', url: '/油烟机9060.jpg' },
+            { type: 'image', url: '/9060_1.jpg' },
+            { type: 'image', url: '/9060_4.jpg' }
+          ],
+          posterImages: ['/海报图1.jpg'],
+          shoppingUrl: 'https://search.jd.com/Search?keyword=方太9060油烟机'
         }
       },
       {
@@ -99,9 +126,14 @@ export const questionData: Record<string, Question> = {
         text: '吸力足，追求性价比',
         type: 'show_product',
         product: {
-          name: '9063G/9008',
-          description: '高性价比油烟机，吸力强劲',
-          media: [{ type: 'image', url: '9063G/9008产品图' }]
+          name: 'EMG9063G / EMG9008',
+          description: '高性价比，吸力强劲',
+          media: [
+            { type: 'image', url: '/油烟机9063G.jpg' },
+            { type: 'image', url: '/油烟机9008.jpg' }
+          ],
+          posterImages: ['/海报图1.jpg'],
+          shoppingUrl: 'https://search.jd.com/Search?keyword=方太9063G油烟机'
         }
       },
       {
@@ -109,9 +141,11 @@ export const questionData: Record<string, Question> = {
         text: '满足基本需求，稳定耐用',
         type: 'show_product',
         product: {
-          name: '9028S',
-          description: '基础款油烟机，稳定可靠',
-          media: [{ type: 'image', url: '9028S产品图' }]
+          name: 'EMS9028S',
+          description: '基础款，稳定可靠',
+          media: [{ type: 'image', url: '/油烟机9028S.jpg' }],
+          posterImages: ['/海报图1.jpg'],
+          shoppingUrl: 'https://search.jd.com/Search?keyword=方太9028S油烟机'
         }
       }
     ]

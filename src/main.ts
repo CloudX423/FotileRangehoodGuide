@@ -111,7 +111,7 @@ function addGlobalStyles(): void {
       padding: 12px;
       align-items: stretch;
     }
-    
+
     #app.showing-product .container {
       display: flex;
       flex-direction: column;
@@ -119,8 +119,9 @@ function addGlobalStyles(): void {
       padding: 20px;
       border-radius: 16px;
       max-height: calc(100vh - 24px);
+      background: rgb(230, 230, 230);
     }
-    
+
     /* 禁止产品页面内滚动 */
     #app.showing-product .container {
       overflow: hidden;
@@ -226,14 +227,18 @@ function handleAppClick(event: Event): void {
 function goToSlide(index: number): void {
   const carouselTrack = document.querySelector('.carousel-track') as HTMLElement;
   const carouselContainer = document.querySelector('.carousel-container') as HTMLElement;
-  
+
   if (!carouselTrack || !carouselContainer) return;
 
   const totalSlides = document.querySelectorAll('.carousel-slide').length;
   const currentIndex = parseInt(carouselContainer.getAttribute('data-current-index') || '0');
 
-  if (index < 0) index = 0;
-  if (index >= totalSlides) index = totalSlides - 1;
+  // 实现循环展示
+  if (index < 0) {
+    index = totalSlides - 1;  // 循环到最后一张
+  } else if (index >= totalSlides) {
+    index = 0;  // 循环到第一张
+  }
 
   // 暂停所有视频（切换前）
   document.querySelectorAll('video').forEach(v => v.pause());
@@ -266,6 +271,68 @@ window.addEventListener('carousel-prev', () => {
 
 window.addEventListener('carousel-next', () => {
   nextSlide();
+});
+
+// 监听显示海报事件
+window.addEventListener('show-poster', () => {
+  const posterModal = document.getElementById('poster-modal');
+  if (posterModal) {
+    posterModal.style.display = 'block';
+    document.body.style.overflow = 'hidden'; // 禁止背景滚动
+  }
+});
+
+// 海报轮播相关函数
+function posterGoToSlide(index: number): void {
+  const posterCarouselTrack = document.querySelector('.poster-carousel-track') as HTMLElement;
+  const posterCarousel = document.querySelector('.poster-carousel') as HTMLElement;
+
+  if (!posterCarouselTrack || !posterCarousel) return;
+
+  const totalSlides = document.querySelectorAll('.poster-carousel-slide').length;
+  const currentIndex = parseInt(posterCarousel.getAttribute('data-current-index') || '0');
+
+  // 实现循环展示
+  if (index < 0) {
+    index = totalSlides - 1;  // 循环到最后一张
+  } else if (index >= totalSlides) {
+    index = 0;  // 循环到第一张
+  }
+
+  posterCarouselTrack.style.transform = `translateX(-${index * 100}%)`;
+  posterCarousel.setAttribute('data-current-index', index.toString());
+
+  // 更新指示器点
+  document.querySelectorAll('.poster-carousel-dot').forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+}
+
+function posterPrevSlide(): void {
+  const posterCarousel = document.querySelector('.poster-carousel') as HTMLElement;
+  const currentIndex = parseInt(posterCarousel?.getAttribute('data-current-index') || '0');
+  posterGoToSlide(currentIndex - 1);
+}
+
+function posterNextSlide(): void {
+  const posterCarousel = document.querySelector('.poster-carousel') as HTMLElement;
+  const currentIndex = parseInt(posterCarousel?.getAttribute('data-current-index') || '0');
+  posterGoToSlide(currentIndex + 1);
+}
+
+// 监听海报轮播自定义事件
+window.addEventListener('poster-prev', () => {
+  posterPrevSlide();
+});
+
+window.addEventListener('poster-next', () => {
+  posterNextSlide();
+});
+
+window.addEventListener('poster-go-to', (e: any) => {
+  if (e.detail !== undefined) {
+    posterGoToSlide(e.detail);
+  }
 });
 
 // 重新开始

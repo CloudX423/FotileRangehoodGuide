@@ -1,9 +1,7 @@
 import { defineConfig } from 'vite';
 
-const isGitHubPages = process.env.GITHUB_PAGES === 'true';
-
 export default defineConfig({
-  base: isGitHubPages ? '/FotileRanghoodGuide/' : '/',
+  base: '/FotileRangehoodGuide/',  // ⚠️ 改为你的仓库名，前后都要有斜杠
   server: {
     port: 5000,
     host: '0.0.0.0',
@@ -14,5 +12,10 @@ export default defineConfig({
       clientPort: 443,
       timeout: 30000,
     },
+  },
+  preview: {
+    port: 5000,
+    host: '0.0.0.0',
+    allowedHosts: true,
   },
 });

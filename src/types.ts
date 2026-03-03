@@ -26,6 +26,8 @@ export interface ProductInfo {
   name: string;
   description: string;
   media: MediaItem[]; // 支持图片和视频混排
+  shoppingUrl?: string; // 购物链接（可选）
+  posterImages?: string[]; // 海报图片列表（可选）
 }
 
 // 问题接口
