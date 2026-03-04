@@ -1,7 +1,7 @@
 import { Question, ProductInfo } from './types';
 
 // 渲染问题卡片
-export function renderQuestion(question: Question, onAnswerClick: (answerId: string) => void): string {
+export function renderQuestion(question: Question): string {
   const answersHtml = question.answers
     .map(answer => `
       <button 
@@ -52,13 +52,20 @@ export function renderQuestion(question: Question, onAnswerClick: (answerId: str
 function getBaseUrl(): string {
   const baseUrl = typeof import.meta !== 'undefined' && import.meta.env?.BASE_URL || '';
   // 开发环境中 BASE_URL 是 '/'，我们需要返回空字符串
-  return baseUrl === '/' ? '' : baseUrl;
+  if (!baseUrl || baseUrl === '/') return '';
+  // 统一去掉末尾的 '/'，避免与资源路径拼接时出现 '//' 导致 404
+  return baseUrl.replace(/\/$/, '');
 }
 
 // 渲染产品卡片
-export function renderProduct(product: ProductInfo, onRestartClick: () => void): string {
+export function renderProduct(product: ProductInfo): string {
   const hasMultipleMedia = product.media.length > 1;
   const baseUrl = getBaseUrl();
+
+  const withBase = (url: string): string => {
+    if (!baseUrl) return url;
+    return `${baseUrl}/${url.replace(/^\//, '')}`;
+  };
 
   // 随机选择一句宣传语
   const slogans = [
@@ -104,7 +111,7 @@ export function renderProduct(product: ProductInfo, onRestartClick: () => void):
               return `
                 <div class="carousel-slide" data-index="${index}">
                   <img 
-                    src="${baseUrl}${mediaItem.url}"
+                    src="${withBase(mediaItem.url)}"
                     alt="${product.name} - 图片${index + 1}"
                     onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\\'placeholder\\'><svg class=\\'w-16 h-16\\' fill=\\'none\\' stroke=\\'currentColor\\' viewBox=\\'0 0 24 24\\'><path stroke-linecap=\\'round\\' stroke-linejoin=\\'round\\' stroke-width=\\'2\\' d=\\'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z\\'></path></svg><p>${mediaItem.url}</p></div>'"
                   />
@@ -114,7 +121,7 @@ export function renderProduct(product: ProductInfo, onRestartClick: () => void):
               return `
                 <div class="carousel-slide video-slide" data-index="${index}">
                   <video 
-                    src="${baseUrl}${mediaItem.url}"
+                    src="${withBase(mediaItem.url)}"
                     controls 
                     playsinline
                     preload="metadata"
@@ -185,7 +192,7 @@ export function renderProduct(product: ProductInfo, onRestartClick: () => void):
               ${product.posterImages && product.posterImages.length > 0 ? product.posterImages.map((imgUrl, index) => `
                 <div class="poster-carousel-slide" data-index="${index}">
                   <img
-                    src="${baseUrl}${imgUrl}"
+                    src="${withBase(imgUrl)}"
                     alt="海报${index + 1}"
                     class="poster-image"
                     onerror="this.style.display='none';"

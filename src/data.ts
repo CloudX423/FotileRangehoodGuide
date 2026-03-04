@@ -27,13 +27,7 @@ export const questionData: Record<string, Question> = {
           description: '全隐藏式油烟机',
           media: [
             { type: 'image', url: '/油烟机9069G.jpg' },
-            { type: 'image', url: '/9069g-1.jpg' },
-            { type: 'image', url: '/9069g-2.jpg' },
-            { type: 'image', url: '/9069g-3.jpg' },
-            { type: 'image', url: '/9069g-4.jpg' },
-            { type: 'image', url: '/9069g-5.jpg' },
-            { type: 'image', url: '/9069g-6.jpg' },
-            { type: 'video', url: '/9069g-demo.mp4' }
+            { type: 'image', url: '/9069g-new-1.jpg' }
           ],
           posterImages: ['/海报图1.jpg'],
           shoppingUrl: 'https://qkitchen.co.nz/product/694480f9a489d31a6db348f1/'

@@ -1,11 +1,11 @@
 import { questionData, START_QUESTION_ID } from './data';
-import { Question, Answer } from './types';
+import { ProductInfo } from './types';
 import { renderQuestion, renderProduct } from './components';
 
 // 应用状态
 type AppState = {
   currentQuestionId: string | null;
-  currentProduct: any | null;
+  currentProduct: ProductInfo | null;
   history: string[]; // 记录问题ID的历史，用于可能的返回功能
 };
 
@@ -154,13 +154,13 @@ function renderApp(): void {
 
   if (appState.currentProduct) {
     // 显示产品卡片
-    content = renderProduct(appState.currentProduct, restartApp);
+    content = renderProduct(appState.currentProduct);
     app.classList.add('showing-product');
   } else if (appState.currentQuestionId) {
     // 显示问题卡片
     const question = questionData[appState.currentQuestionId];
     if (question) {
-      content = renderQuestion(question, handleAnswerClick);
+      content = renderQuestion(question);
     }
     app.classList.remove('showing-product');
   }
@@ -231,7 +231,6 @@ function goToSlide(index: number): void {
   if (!carouselTrack || !carouselContainer) return;
 
   const totalSlides = document.querySelectorAll('.carousel-slide').length;
-  const currentIndex = parseInt(carouselContainer.getAttribute('data-current-index') || '0');
 
   // 实现循环展示
   if (index < 0) {
@@ -290,7 +289,6 @@ function posterGoToSlide(index: number): void {
   if (!posterCarouselTrack || !posterCarousel) return;
 
   const totalSlides = document.querySelectorAll('.poster-carousel-slide').length;
-  const currentIndex = parseInt(posterCarousel.getAttribute('data-current-index') || '0');
 
   // 实现循环展示
   if (index < 0) {
@@ -329,9 +327,10 @@ window.addEventListener('poster-next', () => {
   posterNextSlide();
 });
 
-window.addEventListener('poster-go-to', (e: any) => {
-  if (e.detail !== undefined) {
-    posterGoToSlide(e.detail);
+window.addEventListener('poster-go-to', (event: Event) => {
+  const { detail } = event as CustomEvent<number>;
+  if (typeof detail === 'number') {
+    posterGoToSlide(detail);
   }
 });
 
