@@ -26,8 +26,15 @@ export const questionData: Record<string, Question> = {
           name: 'EMG9069G',
           description: '全隐藏式油烟机',
           media: [
-            { type: 'image', url: '/油烟机9069G.jpg' },
-            { type: 'image', url: '/9069g-new-1.jpg' }
+            // 按 1-8 顺序展示：7 张图片 + 1 个视频（封面就是 1）
+            { type: 'image', url: '/assets/9069G/油烟机9069G1.jpg' },
+            { type: 'image', url: '/assets/9069G/油烟机9069G2.jpg' },
+            { type: 'image', url: '/assets/9069G/油烟机9069G3.jpg' },
+            { type: 'image', url: '/assets/9069G/油烟机9069G4.jpg' },
+            { type: 'image', url: '/assets/9069G/油烟机9069G5.jpg' },
+            { type: 'image', url: '/assets/9069G/油烟机9069G6.jpg' },
+            { type: 'image', url: '/assets/9069G/油烟机9069G7.jpg' },
+            { type: 'video', url: '/assets/9069G/油烟机9069G8.mp4' }
           ],
           posterImages: ['/海报图1.jpg'],
           shoppingUrl: 'https://qkitchen.co.nz/product/694480f9a489d31a6db348f1/'
