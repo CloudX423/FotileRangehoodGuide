@@ -26,7 +26,6 @@ export const questionData: Record<string, Question> = {
           name: 'EMG9069G',
           description: '全隐藏式油烟机',
           media: [
-            // 按 1-8 顺序展示：7 张图片 + 1 个视频（封面就是 1）
             { type: 'image', url: '/assets/9069G/油烟机9069G1.jpg' },
             { type: 'image', url: '/assets/9069G/油烟机9069G2.jpg' },
             { type: 'image', url: '/assets/9069G/油烟机9069G3.jpg' },
@@ -50,7 +49,13 @@ export const questionData: Record<string, Question> = {
           media: [
             { type: 'image', url: '/6018.jpg' },
             { type: 'image', url: '/6018W.jpg' },
-            { type: 'image', url: '/6020Y.jpg' }
+            { type: 'image', url: '/6020Y.jpg' },
+            { type: 'image', url: '/6018_003.jpg' },
+            { type: 'image', url: '/6018_002.png' },
+            { type: 'image', url: '/6020Y_001.png' },
+            { type: 'image', url: '/6020Y_002.png' },
+            { type: 'image', url: '/6018W_001.png' },
+            { type: 'image', url: '/6018W_002.png' }
           ],
           posterImages: ['/海报图1.jpg'],
           shoppingUrl: 'https://search.jd.com/Search?keyword=方太6018油烟机'
@@ -73,7 +78,11 @@ export const questionData: Record<string, Question> = {
             { type: 'image', url: '/油烟机9050.jpg' },
             { type: 'image', url: '/油烟机9050Y.jpg' },
             { type: 'image', url: '/9050_4.jpg' },
-            { type: 'image', url: '/9050Y_2.jpg' }
+            { type: 'image', url: '/9050Y_2.jpg' },
+            { type: 'image', url: '/9050Y_002.jpg' },
+            { type: 'image', url: '/9050_002.jpg' },
+            { type: 'image', url: '/9050Y_003.jpg' },
+            { type: 'image', url: '/9050_003.jpg' }
           ],
           posterImages: ['/海报图1.jpg'],
           shoppingUrl: 'https://search.jd.com/Search?keyword=方太9050油烟机'
@@ -88,7 +97,12 @@ export const questionData: Record<string, Question> = {
           description: '吸烟距离近，开放式厨房理想选择',
           media: [
             { type: 'image', url: '/油烟机9009X.jpg' },
-            { type: 'image', url: '/油烟机9039.jpg' }
+            { type: 'image', url: '/油烟机9039.jpg' },
+            { type: 'image', url: '/9039_003.png' },
+            { type: 'image', url: '/9039_001.jpg' },
+            { type: 'image', url: '/9009_003.png' },
+            { type: 'image', url: '/9009_002.png' },
+            { type: 'image', url: '/9009_001.png' }
           ],
           posterImages: ['/海报图1.jpg'],
           shoppingUrl: 'https://search.jd.com/Search?keyword=方太侧吸油烟机'
@@ -116,7 +130,9 @@ export const questionData: Record<string, Question> = {
           media: [
             { type: 'image', url: '/油烟机9060.jpg' },
             { type: 'image', url: '/9060_1.jpg' },
-            { type: 'image', url: '/9060_4.jpg' }
+            { type: 'image', url: '/9060_4.jpg' },
+            { type: 'image', url: '/9060_001.png' },
+            { type: 'image', url: '/9060_003.png' }
           ],
           posterImages: ['/海报图1.jpg'],
           shoppingUrl: 'https://search.jd.com/Search?keyword=方太9060油烟机'
@@ -131,7 +147,12 @@ export const questionData: Record<string, Question> = {
           description: '高性价比，吸力强劲',
           media: [
             { type: 'image', url: '/油烟机9063G.jpg' },
-            { type: 'image', url: '/油烟机9008.jpg' }
+            { type: 'image', url: '/油烟机9008.jpg' },
+            { type: 'image', url: '/9063_001.jpg' },
+            { type: 'image', url: '/9063_002.jpg' },
+            { type: 'image', url: '/9063_003.jpg' },
+            { type: 'image', url: '/9008_002.jpg' },
+            { type: 'image', url: '/9008_003.jpg' }
           ],
           posterImages: ['/海报图1.jpg'],
           shoppingUrl: 'https://search.jd.com/Search?keyword=方太9063G油烟机'
@@ -144,7 +165,13 @@ export const questionData: Record<string, Question> = {
         product: {
           name: 'EMS9028S',
           description: '基础款，稳定可靠',
-          media: [{ type: 'image', url: '/油烟机9028S.jpg' }],
+          media: [
+            { type: 'image', url: '/油烟机9028S.jpg' },
+            { type: 'image', url: '/9028_001.jpg' },
+            { type: 'image', url: '/9028_002.jpg' },
+            { type: 'image', url: '/9028_003.jpg' },
+            { type: 'image', url: '/9028_004.jpg' }
+          ],
           posterImages: ['/海报图1.jpg'],
           shoppingUrl: 'https://search.jd.com/Search?keyword=方太9028S油烟机'
         }
